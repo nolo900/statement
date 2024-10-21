@@ -35,7 +35,9 @@ function renderHtml (data) {
 
 
 function usd(aNumber){
-	return new Intl.NumberFormat("en-US",
-	{ style: "currency", currency: "USD",
-		minimumFractionDigits: 2 }).format(aNumber/100);
+	return new Intl.NumberFormat("en-US",{ 
+		style: "currency", 
+		currency: "USD",
+		minimumFractionDigits: 2 
+	}).format(aNumber/100);
 }
